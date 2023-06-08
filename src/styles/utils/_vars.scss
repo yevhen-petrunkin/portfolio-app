@@ -1,20 +1,20 @@
-:root {
-  /* Colors */
-  //   --white-color: #ffffff;
-  --blue-color: #2196f3;
-  //   --submit-hover-color: #188ce8;
+// Colors
 
-  //   /* Fonts */
-  //   --roboto: 'Roboto', sans-serif;
-  //   --raleway: 'Raleway', sans-serif;
+$accent: #ffeb3b;
+$deep: #2f4858;
+$primary: #006d7e;
+$secondary: #00948c;
+$textcolor: #392f00;
+$basic: #fdf9ec;
 
-  //   // Timing function
+$border-opacity: 0.2;
 
-  //   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+// Fonts
 
-$redColor: red;
-// $mobileMax: 767px;
-// $tabletMin: 768px;
-// $tabletMax: 1199px;
-// $desktopMin: 1200px;
+$lineheight: 1.7;
+$userfont: Roboto, sans-serif;
+
+// Sizes
+
+$default: 70px;
+$fontsize: 16px;

@@ -1,0 +1,112 @@
+.header {
+  height: 100%;
+  font-family: 'Raleway';
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: $basic;
+  background-color: $deep;
+}
+
+.topline {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: $default;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $deep;
+  border-bottom: 1px solid rgba($basic, $border-opacity);
+}
+
+.logo {
+  @extend %link;
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  color: $basic;
+}
+
+.logo__img--wrapper {
+  width: $default;
+  height: $default;
+}
+
+.logo__img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.topline__decoration {
+  flex: 1 0 0;
+  text-align: center;
+
+  &::before {
+    @include lightenedBlock($basic, $border-opacity);
+    content: '';
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+  }
+}
+
+.topline__contacts {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  font-size: 10px;
+  color: $secondary;
+}
+
+.topline__category {
+  padding-right: 0.6em;
+}
+
+.topline__number {
+  @extend %link;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: $accent;
+}
+
+.topline__location {
+  color: $basic;
+}
+
+.topline__separator {
+  @include lightenedBlock($basic, $border-opacity);
+  width: 1px;
+  height: 30px;
+}
+
+.burger__button {
+  position: relative;
+  width: $default;
+  height: $default;
+  color: $basic;
+  background-color: $primary;
+  border: none;
+  cursor: pointer;
+  transition: color 500ms ease-out, background-color 500ms ease-out;
+
+  &:hover,
+  &:focus {
+    color: $deep;
+    background-color: $accent;
+  }
+}
+
+.burger__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+}

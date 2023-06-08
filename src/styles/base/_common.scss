@@ -1,6 +1,15 @@
-// body {
-//   background-color: var(--white-color);
-//   color: var(--primary-black-color);
-//   font-family: var(--roboto);
-//   letter-spacing: 0.03em;
-// }
+body {
+  color: $textcolor;
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}

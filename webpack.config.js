@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
-      title: 'React-App',
+      title: 'Yevhen Petrunkin Portfolio',
       template: path.resolve(__dirname, './index.html'),
       filename: 'index.html',
     }),

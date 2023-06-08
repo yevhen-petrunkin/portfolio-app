@@ -1,10 +1,14 @@
 // utils
 @import './utils/vars';
-@import './utils/placeholders';
 @import './utils/mixins';
+@import './utils/fonts';
+@import './utils/placeholders';
 @import './utils/visually-hidden';
 
 // base
 @import './base/common';
 @import './base/reset';
 @import './base/container';
+
+// components
+@import './blocks/header';

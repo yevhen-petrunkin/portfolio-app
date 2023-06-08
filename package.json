@@ -1,7 +1,7 @@
 {
   "name": "webpack-react-starter",
   "version": "1.0.0",
-  "homepage": "https://yevhen-petrunkin.github.io/webpack-react-starter-sass/",
+  "homepage": "https://yevhen-petrunkin.github.io/portfolio-app/",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,14 +13,21 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
-  "keywords": [],
-  "author": "Skjold <mmm@mail.com>",
+  "keywords": [
+    "yevhen",
+    "petrunkin",
+    "yevhen petrunkin",
+    "portfolio",
+    "projects"
+  ],
+  "author": "Yevhen Petrunkin <novamovaxxi@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@babel/preset-env": "^7.20.2",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",

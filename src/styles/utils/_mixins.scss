@@ -1,0 +1,18 @@
+@mixin font($fname, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    src: url($furl) format('truetype');
+    font-weight: $fweight;
+    font-style: normal;
+  }
+}
+
+@mixin lightenedBlock($bcolor, $bopacity) {
+  background-color: $bcolor;
+  opacity: $bopacity;
+}
+
+@mixin lightenedText($tcolor, $topacity) {
+  background-color: $tcolor;
+  opacity: $topacity;
+}
