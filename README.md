@@ -1,1 +1,1 @@
-# webpack-react-stater
+# Portfolio of Yevhen Petrunkin
