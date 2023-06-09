@@ -13,6 +13,6 @@
 }
 
 @mixin lightenedText($tcolor, $topacity) {
-  background-color: $tcolor;
+  color: $tcolor;
   opacity: $topacity;
 }

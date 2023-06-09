@@ -1,0 +1,86 @@
+.sidebar {
+  width: $default;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: $primary;
+}
+
+.sidebar__decoration {
+  @include lightenedText($basic, $border-opacity);
+  position: relative;
+  width: 100%;
+  height: 10%;
+}
+
+.sidebar___decoration--icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 60%;
+}
+
+.sidebar__media {
+  @extend %list;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__item {
+  margin-top: -1px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba($basic, $border-opacity);
+  border-bottom: 1px solid transparent;
+
+  &:last-child {
+    border-bottom: 1px solid rgba($basic, $border-opacity);
+  }
+}
+
+.sidebar__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba($basic, $border-opacity);
+  transition: color 400ms ease-out, background-color 400ms ease-out;
+
+  &:hover,
+  &:focus {
+    color: $deep;
+    background-color: $accent;
+  }
+}
+
+.sidebar__icon {
+  width: 40%;
+  height: 40%;
+  color: currentColor;
+}
+
+.sidebar__share {
+  position: relative;
+
+  width: $default;
+  flex: 0 0 $default;
+  color: $deep;
+  background-color: $accent;
+}
+
+.sidebar___share--icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+}

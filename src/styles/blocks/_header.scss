@@ -1,5 +1,4 @@
 .header {
-  height: 100%;
   font-family: 'Raleway';
   font-size: 13px;
   font-weight: 500;
@@ -87,13 +86,13 @@
 
 .burger__button {
   position: relative;
-  width: $default;
+  flex: 0 0 $default;
   height: $default;
   color: $basic;
-  background-color: $primary;
+  background-color: $secondary;
   border: none;
   cursor: pointer;
-  transition: color 500ms ease-out, background-color 500ms ease-out;
+  transition: color 400ms ease-out, background-color 400ms ease-out;
 
   &:hover,
   &:focus {
