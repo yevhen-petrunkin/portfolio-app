@@ -1,7 +1,7 @@
 import logo from '../images/logo-photo.jpg';
 import { RxHamburgerMenu } from 'react-icons/Rx';
 
-const Header = function () {
+const Header = function ({ handleModalClick, isModalOpen }) {
   return (
     <header className="header">
       <div className="topline">
@@ -37,7 +37,11 @@ const Header = function () {
 
         <div className="topline__decoration"></div>
 
-        <button className="burger__button" type="button">
+        <button
+          className="burger__button"
+          type="button"
+          onClick={() => handleModalClick(!isModalOpen)}
+        >
           <RxHamburgerMenu className="burger__icon" />
         </button>
       </div>

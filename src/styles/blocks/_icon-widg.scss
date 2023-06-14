@@ -1,0 +1,22 @@
+.icon-widget {
+  @extend %list;
+  position: absolute;
+  right: 0;
+  padding: 0.5em;
+  width: calc(#{$default} * 1.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1em;
+  color: $accent;
+}
+
+.icon-widget__item {
+  width: 2vw;
+  height: 2vw;
+}
+
+.icon-widget__icon {
+  width: 100%;
+  height: 100%;
+}

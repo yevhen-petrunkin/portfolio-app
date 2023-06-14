@@ -1,13 +1,15 @@
 import { HiArrowDown } from 'react-icons/Hi';
+import trident from '../images/trident.svg';
 import { IoArrowRedoSharp } from 'react-icons/io5';
 import { FaTelegram, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
 
 const Sidebar = function () {
   return (
     <aside className="sidebar">
-      <div className="sidebar__decoration">
-        <HiArrowDown className="sidebar___decoration--icon" />
-      </div>
+      <div
+        className="sidebar__decoration"
+        style={{ backgroundImage: `url(${trident})` }}
+      ></div>
 
       <ul className="sidebar__media">
         <li className="sidebar__item">
@@ -16,6 +18,7 @@ const Sidebar = function () {
             className="sidebar__link"
             target="_blank"
             rel="noopener"
+            title="Contact me on LinkedIn"
           >
             <FaLinkedin className="sidebar__icon" />
           </a>
@@ -26,6 +29,7 @@ const Sidebar = function () {
             className="sidebar__link"
             target="_blank"
             rel="noopener"
+            title="Contact me on Telegram"
           >
             <FaTelegram className="sidebar__icon" />
           </a>
@@ -36,6 +40,7 @@ const Sidebar = function () {
             className="sidebar__link"
             target="_blank"
             rel="noopener"
+            title="See my GitHub"
           >
             <FaGithub className="sidebar__icon" />
           </a>
@@ -46,6 +51,7 @@ const Sidebar = function () {
             className="sidebar__link"
             target="_blank"
             rel="noopener"
+            title="Contact me on Facebook"
           >
             <FaFacebook className="sidebar__icon" />
           </a>
@@ -55,13 +61,6 @@ const Sidebar = function () {
       <div className="sidebar__share">
         <IoArrowRedoSharp className="sidebar___share--icon" />
       </div>
-
-      {/* <a
-          href="https://www.linkedin.com/in/yevhen-petrunkin-503617259/"
-          className="logo"
-          target="_blank"
-          rel="noopener"
-        > */}
     </aside>
   );
 };

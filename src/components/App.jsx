@@ -1,11 +1,31 @@
+import { useState } from 'react';
 import Header from './Header';
 import Main from './Main';
+import Modal from './Modal';
 
 const App = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [collection, setCollection] = useState('portfolio');
+
+  const handleModalClick = modalState => {
+    setIsModalOpen(modalState);
+  };
+
+  const handleBurgerMenu = item => {
+    setCollection(item);
+  };
+
   return (
     <>
-      <Header />
-      <Main />
+      <Header handleModalClick={handleModalClick} isModalOpen={isModalOpen} />
+      <Main collection={collection} />
+      {isModalOpen && (
+        <Modal
+          handleBurgerMenu={handleBurgerMenu}
+          handleModalClick={handleModalClick}
+          isModalOpen={isModalOpen}
+        />
+      )}
     </>
   );
 };

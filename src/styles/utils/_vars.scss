@@ -1,11 +1,11 @@
 // Colors
 
-$accent: #ffeb3b;
+$accent: #fbc02d;
 $deep: #2f4858;
-$primary: #006d7e;
-$secondary: #00948c;
-$basic: #fdf9ec;
-$textcolor: #392f00;
+$primary: #006875;
+$secondary: #008779;
+$basic: #fff8ea;
+$textcolor: #402e32;
 
 $border-opacity: 0.2;
 
@@ -16,5 +16,10 @@ $userfont: Roboto, sans-serif;
 
 // Sizes
 
-$default: 70px;
+$default: 5vw;
 $fontsize: 16px;
+
+// Shadows
+
+$mainshadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+  0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);

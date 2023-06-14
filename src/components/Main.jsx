@@ -1,12 +1,14 @@
 import Sidebar from './Sidebar';
 import Slider from './Slider';
 
-function Main() {
+function Main({ collection }) {
   return (
     <main>
       <section className="main">
         <Sidebar />
-        <Slider />
+
+        <Slider collection={collection} />
+        <div></div>
       </section>
     </main>
   );

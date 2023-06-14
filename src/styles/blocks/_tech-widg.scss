@@ -1,0 +1,21 @@
+.tech-widget {
+  @extend %list;
+  position: absolute;
+  right: 0;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1em;
+  color: $accent;
+}
+
+.tech-widget__item {
+  width: 2vw;
+  height: 2vw;
+}
+
+.tech-widget__icon {
+  width: 100%;
+  height: 100%;
+}
