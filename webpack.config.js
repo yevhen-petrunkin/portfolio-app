@@ -44,7 +44,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|json)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -57,7 +57,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(ico|gif|png|jpg|jpeg|svg)$/i,
+        test: /\.(ico|gif|png|jpg|jpeg|svg)$/,
         type: 'asset',
         generator: {
           filename: 'images/[hash][ext][query]',

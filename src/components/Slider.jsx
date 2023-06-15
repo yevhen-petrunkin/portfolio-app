@@ -94,112 +94,114 @@ function Slider({ collection, handleSlideCounter }) {
         })}
       </Swiper>
 
-      <Swiper
-        ref={swiper2}
-        className="swiper-text"
-        modules={[Navigation, Pagination]}
-        parallax={true}
-        speed={1600}
-        navigation={{
-          prevEl: '.nav-button--prev',
-          nextEl: '.nav-button--next',
-        }}
-        keyboard={{ enabled: true }}
-        pagination={{
-          clickable: true,
-        }}
-        scrollbar={{ draggable: true }}
-        mousewheel={{
-          sensitivity: 20,
-          thresholdDelta: 100,
-          thresholdTime: 120,
-        }}
-        breakpoints={swiperBreakpoints}
-        onSlideChange={handleSlideChange}
-      >
-        {collection === 'portfolio' &&
-          projects.map(
-            ({ id, title, dates, description, technologies, techImg }) => {
-              const techString = technologies.join(', ');
+      <div className="swiper-text__container">
+        <Swiper
+          ref={swiper2}
+          className="swiper-text__slider"
+          modules={[Navigation, Pagination]}
+          parallax={true}
+          speed={1600}
+          navigation={{
+            prevEl: '.nav-button--prev',
+            nextEl: '.nav-button--next',
+          }}
+          keyboard={{ enabled: true }}
+          pagination={{
+            clickable: true,
+          }}
+          scrollbar={{ draggable: true }}
+          mousewheel={{
+            sensitivity: 20,
+            thresholdDelta: 100,
+            thresholdTime: 120,
+          }}
+          breakpoints={swiperBreakpoints}
+          onSlideChange={handleSlideChange}
+        >
+          {collection === 'portfolio' &&
+            projects.map(
+              ({ id, title, dates, description, technologies, techImg }) => {
+                const techString = technologies.join(', ');
+                return (
+                  <SwiperSlide key={id} className="slide-frame">
+                    <article className="projectbox">
+                      <div
+                        data-swiper-parallax="10%"
+                        className="projectbox__wrapper"
+                      >
+                        <h1
+                          data-swiper-parallax="25%"
+                          className="projectbox__item projectbox__item--title"
+                        >
+                          {title}
+                        </h1>
+                        <p
+                          data-swiper-parallax="15%"
+                          className="projectbox__item projectbox__item--dates"
+                        >
+                          {dates}
+                        </p>
+                        <p
+                          data-swiper-parallax="20%"
+                          className="projectbox__item projectbox__item--description"
+                        >
+                          {description}
+                        </p>
+                        <p
+                          data-swiper-parallax="15%"
+                          className="projectbox__item projectbox__item--technologies"
+                        >
+                          <span className="projectbox__item--category">
+                            Technologies:{' '}
+                          </span>
+                          {techString}
+                        </p>
+                      </div>
+                      <TechWidg data-swiper-parallax="5%" icons={techImg} />
+                    </article>
+                  </SwiperSlide>
+                );
+              }
+            )}
+          {collection === 'information' &&
+            information.map(({ id, title, description, list, icons }) => {
+              const listString = list.join(', ');
               return (
                 <SwiperSlide key={id} className="slide-frame">
-                  <article className="projectbox">
-                    <div
-                      data-swiper-parallax="10%"
-                      className="projectbox__wrapper"
-                    >
+                  <article className="infobox">
+                    <div data-swiper-parallax="4%" className="infobox__wrapper">
                       <h1
-                        data-swiper-parallax="25%"
-                        className="projectbox__item projectbox__item--title"
+                        data-swiper-parallax="7%"
+                        className="infobox__item infobox__item--title"
                       >
                         {title}
                       </h1>
                       <p
-                        data-swiper-parallax="15%"
-                        className="projectbox__item projectbox__item--dates"
-                      >
-                        {dates}
-                      </p>
-                      <p
-                        data-swiper-parallax="20%"
-                        className="projectbox__item projectbox__item--description"
+                        data-swiper-parallax="5%"
+                        className="infobox__item infobox__item--description"
                       >
                         {description}
                       </p>
-                      <p
-                        data-swiper-parallax="15%"
-                        className="projectbox__item projectbox__item--technologies"
-                      >
-                        <span className="projectbox__item--category">
-                          Technologies:{' '}
-                        </span>
-                        {techString}
-                      </p>
+                      {listString && (
+                        <p
+                          data-swiper-parallax="7%"
+                          className="infobox__item infobox__item--technologies"
+                        >
+                          <span className="infobox__item--category">
+                            Technologies:{' '}
+                          </span>
+                          {listString}
+                        </p>
+                      )}
                     </div>
-                    <TechWidg data-swiper-parallax="5%" icons={techImg} />
+                    {icons.length !== 0 && (
+                      <IconWidg data-swiper-parallax="5%" icons={icons} />
+                    )}
                   </article>
                 </SwiperSlide>
               );
-            }
-          )}
-        {collection === 'information' &&
-          information.map(({ id, title, description, list, icons }) => {
-            const listString = list.join(', ');
-            return (
-              <SwiperSlide key={id} className="slide-frame">
-                <article className="infobox">
-                  <div data-swiper-parallax="4%" className="infobox__wrapper">
-                    <h1
-                      data-swiper-parallax="7%"
-                      className="infobox__item infobox__item--title"
-                    >
-                      {title}
-                    </h1>
-                    <p
-                      data-swiper-parallax="5%"
-                      className="infobox__item infobox__item--description"
-                    >
-                      {description}
-                    </p>
-                    {listString && (
-                      <p
-                        data-swiper-parallax="7%"
-                        className="infobox__item infobox__item--technologies"
-                      >
-                        <span className="infobox__item--category">
-                          Technologies:{' '}
-                        </span>
-                        {listString}
-                      </p>
-                    )}
-                  </div>
-                  {icons.length !== 0 && (
-                    <IconWidg data-swiper-parallax="5%" icons={icons} />
-                  )}
-                </article>
-              </SwiperSlide>
-            );
-          })}
+            })}
+        </Swiper>
         <div className="nav-button__set">
           <button className="nav-button nav-button--prev">
             <IoIosArrowBack className="nav-button__icon" />
@@ -208,7 +210,7 @@ function Slider({ collection, handleSlideCounter }) {
             <IoIosArrowForward className="nav-button__icon" />
           </button>
         </div>
-      </Swiper>
+      </div>
 
       <div className="slider-gear">
         <div
