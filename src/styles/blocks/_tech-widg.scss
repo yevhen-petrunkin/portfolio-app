@@ -2,11 +2,11 @@
   @extend %list;
   position: absolute;
   right: 0;
-  padding: 0.5em;
+  padding: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 1em;
+  gap: 1vw;
   color: $accent;
 }
 

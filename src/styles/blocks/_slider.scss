@@ -50,31 +50,31 @@
 }
 
 .projectbox__wrapper {
-  padding: 2em;
+  padding: 2vw;
   max-width: 60%;
-  background-color: rgba($deep, 0.8);
+  background-color: rgba($deep, 0.9);
   box-shadow: $mainshadow;
 }
 
 .projectbox__item {
   font-family: Oswald, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.7vw;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.1vw;
   text-align: right;
   color: $basic;
   text-shadow: 1px 1px 10px $deep;
 
   &:not(:first-child) {
-    margin-top: 1em;
+    margin-top: 1vw;
   }
 }
 
 .projectbox__item--title {
-  font-size: 5em;
+  font-size: 6vw;
   font-weight: 800;
   line-height: 1.05;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.2vw;
   color: $accent;
 }
 
@@ -92,19 +92,19 @@
   right: 20vw;
   z-index: 8;
   height: $default;
-  padding-right: 1.5em;
+  padding-right: 1vw;
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.5vw;
 }
 
 .nav-button {
   position: relative;
-  width: 3em;
-  height: 3em;
+  width: 3vw;
+  height: 3vw;
   color: $accent;
   background-color: rgba($deep, 0.8);
-  border: 2px solid $accent;
+  border: 1px solid $accent;
   border-radius: 50%;
   cursor: pointer;
   transition: color 400ms ease-out, border 400ms ease-out;
@@ -112,7 +112,7 @@
   &:hover,
   &:focus {
     color: $deep;
-    border: 2px solid $deep;
+    border: 1px solid $deep;
   }
 }
 
@@ -128,13 +128,15 @@
 .swiper-pagination {
   bottom: 0 !important;
   z-index: 5 !important;
-  padding-left: calc(#{$default} * 3 + 1vw);
+  padding-left: calc(#{$default} * 2 + 1vw);
   height: $default;
   display: flex;
   align-items: center;
 }
 
 .swiper-pagination-bullet {
+  width: 0.6vw !important;
+  height: 0.6vw !important;
   background-color: $primary !important;
   opacity: 1 !important;
 }
@@ -145,7 +147,7 @@
 
 .swiper-scrollbar {
   bottom: 4.5% !important;
-  left: 32% !important;
+  left: 36% !important;
   z-index: 6 !important;
   width: 30% !important;
   height: 1% !important;
@@ -194,31 +196,32 @@
 }
 
 .infobox__wrapper {
-  padding: 2em;
-  max-width: 50%;
+  padding: 2vw;
+  max-width: 52%;
   background-color: rgba($deep, 0.8);
   box-shadow: $mainshadow;
+  transition: background-color 400ms ease-out;
 }
 
 .infobox__item {
   font-family: Oswald, sans-serif;
-  font-size: 1.1em;
+  font-size: 1.5vw;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.1vw;
   text-align: right;
   color: $basic;
   text-shadow: 1px 1px 10px $deep;
 
   &:not(:first-child) {
-    margin-top: 1em;
+    margin-top: 1vw;
   }
 }
 
 .infobox__item--title {
-  font-size: 2em;
+  font-size: 3vw;
   font-weight: 800;
   line-height: 1.2;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.2vw;
   color: $accent;
 }
 

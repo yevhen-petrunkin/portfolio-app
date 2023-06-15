@@ -32,7 +32,7 @@ SwiperCore.use([
 
 const part = 1 / projects.length;
 
-function Slider({ collection }) {
+function Slider({ collection, handleSlideCounter }) {
   const swiper1 = useRef(null);
   const swiper2 = useRef(null);
 
@@ -60,6 +60,10 @@ function Slider({ collection }) {
   function getNeededArray() {
     return collection === 'portfolio' ? projects : information;
   }
+
+  useEffect(() => {
+    handleSlideCounter(activeSlideIndex, array.length);
+  }, [activeSlideIndex, array.length]);
 
   return (
     <div className="slider-container">

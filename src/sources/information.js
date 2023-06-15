@@ -14,7 +14,7 @@ const rawInformation = [
     id: '01',
     title: 'Hello!',
     description:
-      'My name is Yevhen Petrunkin. I am a frontend developer with a range of knowledge and skills in JavaScript, React, CSS and Microsoft Framework. I have worked on a number of projects, requiring these skills, which you could see in my portfolio. I also have management experience and profound knowledge of English. Registered entrepreneur.',
+      'My name is Yevhen Petrunkin. I am a frontend developer with a range of knowledge and skills in JavaScript, React, CSS and Microsoft Framework. I have worked on a whole bunch of projects requiring those skills, which you could see in my portfolio. I also have management experience and profound knowledge of English. Registered entrepreneur.',
     list: [],
     icons: [],
     image: info1,
@@ -23,7 +23,7 @@ const rawInformation = [
     id: '02',
     title: 'Technologies And Libraries I Have Worked With',
     description:
-      'As a dedicated frontend developer I have acquired a set of skills, necessary to work with fundamental technologies essential for this job, such as JavaScript and React, CSS and HTML, as well as with more specific ones, which are necessary for narrower and more complex tasks. I am constantly learning new things and keep enlarging this list.',
+      'As a dedicated frontend developer I have acquired a set of skills, crucial for working with fundamental technologies essential for this job, such as JavaScript and React, CSS and HTML, as well as with more specific ones, which are necessary for narrower and more complex tasks. I am constantly learning new things and keep enlarging this list.',
     list: [
       'React',
       'Redux',
@@ -80,7 +80,7 @@ const rawInformation = [
     id: '04',
     title: 'My Previous Experience',
     description:
-      "From 2011 to 2022, I co-founded and ran my own business - a translation and education centre, located in Shostka, Ukraine. As an owner and manager I was responsible for hiring, onboarding and training of our staff, setting and controlling tasks, coordinating our employees' work. There were about 20 people answering to me directly. At our centre we successfully completed over 50 large translation projects in cooperation with Ukrainian and international manufacturers. The business processes were interrupted due to the war in Ukraine that started in 2022.",
+      "In 2011, I co-founded my own business - a translation and education centre, located in Shostka, Ukraine, and ran this centre until 2022, when the war in Ukraine broke out. As an owner and manager I was responsible for hiring, onboarding and training of our staff, setting and controlling tasks, coordinating our employees' work. There were about 20 people answering to me directly. At our centre we successfully completed over 50 large translation projects in cooperation with Ukrainian and international manufacturers.",
     list: [],
     icons: [],
     image: info4,
@@ -89,7 +89,7 @@ const rawInformation = [
     id: '05',
     title: 'My IT Training',
     description:
-      "In September 2022, I applied and was chosen among 50 thousand applicants to enter into 1 thousand of those who would take part in the governmental 'IT Generation' programme. I chose to study Frontend Development at one of the best Ukrainian schools 'GoIT', where I also had to win a competition among more than 2 thousand applicants. From September 2022 to February 2023, I sudied hard there according to a very intensive BootCamp programme, within which I reached the point of almost 700 hours of pure coding!",
+      "In September 2022, I applied and was chosen among 50 thousand applicants to enter into 1 thousand of those who would take part in the governmental 'IT Generation' programme. I chose to study Frontend Development at one of the best Ukrainian schools 'GoIT', where I also had to win a competition among more than 2 thousand applicants. From September 2022 to February 2023, I studied hard there according to a very intensive BootCamp programme, where I reached the point of almost 700 hours of pure coding within 5 months!",
     list: [],
     icons: [],
     image: info5,
@@ -98,7 +98,7 @@ const rawInformation = [
     id: '06',
     title: 'GoIT Certificate',
     description:
-      'While I was studying at GoIT, I acquired a set of skills in JavaScript, CSS, HTML as well as React framework and various tools and libraries, crucial for a frontend developer. Over all this time, I participated and completed one individual and three team projects. After finishing studies, I spent two more months working on my own "Cinemagot" project that you can see in my portfolio, which helped me to consolidate my skills, deepen my knowledge and broaden the range of technologies I could work with.',
+      'While I was studying at GoIT, I acquired a set of skills in JavaScript, CSS, HTML as well as React framework and various tools and libraries, crucial for a frontend developer. Over all this time, I completed one individual and three team web development projects. After finishing studies, I spent two more months working on my own "Cinemagot" project that you can find in my portfolio, which helped me to consolidate my skills, deepen my knowledge and broaden the range of technologies I could work with.',
     list: [],
     icons: [],
     image: info6,
@@ -107,7 +107,7 @@ const rawInformation = [
     id: '07',
     title: 'Kharkiv IT-Cluster Bootcamp Certificate',
     description:
-      'In April-May 2023, I won another competition and was chosen to participate in working on a social project within a programme organised by Kharkiv IT-Cluster. The project was MS Teams career bot, which helps employees to track their career path as well as build and stick to their career plan. It started from scratch and contained the complete development lifecycle - from first draft to final presentation of the finished product to the customer. The project was ordered by Viseven digital company and is meant to be used within their corporate MS Teams network. The text in the Ukrainian language in the Certificate says: "Participated in the development of socially important projects under the guidance of mentors from leading IT companies of Ukraine and gained practical experience in developing projects in the IT industry."',
+      'In April-May 2023, I won another competition and was chosen to participate in working on a social project within a programme organised by Kharkiv IT-Cluster. The project was MS Teams career bot, which helps employees to track their career path as well as build and stick to their career plan. It started from scratch and contained the complete development lifecycle - from first draft to final presentation of the finished product to the customer. Our customer was Viseven digital company and the bot is meant to be used within their corporate MS Teams network. The text in the Certificate in the Ukrainian language says: "Participated in the development of socially important projects under the guidance of mentors from leading IT companies of Ukraine and gained practical experience in developing projects in IT industry."',
     list: [],
     icons: [],
     image: info7,
@@ -116,7 +116,7 @@ const rawInformation = [
     id: '08',
     title: 'Kharkiv IT-Cluster Bootcamp Commendation Letter',
     description:
-      'While working on the aforementioned project during the Kharkiv IT-Cluster Bootcamp, not only I gained real experience in performing commercial tasks, but for high achivements I was also awarded with the Letter of Commendation by Kharkiv IT-Cluster represetatives. The text in the Ukrainian language in the Commendation Letter says: "Proved himself and was actively involved in the work of his team, and did everything possible and impossible for the team to create a working MVP within 5 weeks of fruitfull work and make a worthy final presentation."',
+      'While working on the aforementioned project during the Kharkiv IT-Cluster Bootcamp, not only I gained real experience in performing commercial tasks, but for high achivements I was also awarded with the Letter of Commendation by Kharkiv IT-Cluster represetatives. The text in the Commendation Letter in the Ukrainian language says: "Proved himself and was actively involved in the work of his team, and did everything possible and impossible for the team to create a working MVP within 5 weeks of fruitfull work and make a worthy final presentation."',
     list: [],
     icons: [],
     image: info8,

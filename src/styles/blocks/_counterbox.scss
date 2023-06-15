@@ -1,0 +1,37 @@
+.counterbox {
+  position: absolute;
+  top: $default;
+  right: 0;
+  width: 20vw;
+  height: 50vw;
+  font-family: Oswald, sans-serif;
+  line-height: 0.6;
+  text-shadow: 1px 1px 10px $deep;
+  color: $basic;
+}
+
+.counterbox__counter--animated {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  font-size: 2vw;
+
+  & span {
+    font-size: 4vw;
+    color: $accent;
+  }
+}
+
+.counterbox__counter--simple {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  font-size: 7vw;
+  color: $accent;
+
+  & span {
+    font-weight: 700;
+    color: $deep;
+    -webkit-text-stroke: 1px rgba($basic, 0.8);
+  }
+}

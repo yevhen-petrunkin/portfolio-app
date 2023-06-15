@@ -1,13 +1,13 @@
 .icon-widget {
   @extend %list;
   position: absolute;
-  right: 0;
-  padding: 0.5em;
+  left: 0;
+  padding: 1vw;
   width: calc(#{$default} * 1.5);
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 1em;
+  justify-content: flex-start;
+  gap: 1vw;
   color: $accent;
 }
 

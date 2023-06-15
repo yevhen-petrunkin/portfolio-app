@@ -30,11 +30,11 @@ function SliderMenu({ index }) {
           <FaGithub className="slider__icon" />
         </a>
       </li>
-      <li className="slider__item">
+      {/* <li className="slider__item">
         <button className="slider__button" type="button" title="See more">
           <FiMoreHorizontal className="slider__icon" />
         </button>
-      </li>
+      </li> */}
     </ul>
   );
 }

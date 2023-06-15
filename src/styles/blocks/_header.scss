@@ -1,9 +1,8 @@
 .header {
-  width: 100%;
   font-family: 'Raleway';
-  font-size: 13px;
+  font-size: 1vw;
   font-weight: 500;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.4vw;
   text-transform: uppercase;
   color: $basic;
   background-color: $deep;
@@ -27,7 +26,7 @@
   @extend %link;
   display: flex;
   align-items: center;
-  gap: 1.2em;
+  gap: 1vw;
   color: $basic;
 }
 
@@ -55,18 +54,22 @@
     width: 50px;
     height: 1px;
   }
+
+  @media screen and (max-width: 929px) {
+    display: none;
+  }
 }
 
 .topline__contacts {
   display: flex;
   align-items: center;
-  gap: 1.2em;
-  font-size: 10px;
+  gap: 1vw;
+  font-size: 0.9vw;
   color: $secondary;
 }
 
 .topline__category {
-  padding-right: 0.6em;
+  padding-right: 1vw;
 }
 
 .topline__number {
@@ -84,6 +87,13 @@
   @include lightenedBlock($basic, $border-opacity);
   width: 1px;
   height: 30px;
+}
+
+.topline__mylocation,
+.topline__separator {
+  @media screen and (max-width: 829px) {
+    display: none;
+  }
 }
 
 .burger__button {

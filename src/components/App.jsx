@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from './Header';
 import Main from './Main';
 import Modal from './Modal';
+import Footer from './Footer';
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,6 +20,7 @@ const App = () => {
     <>
       <Header handleModalClick={handleModalClick} isModalOpen={isModalOpen} />
       <Main collection={collection} />
+      <Footer />
       {isModalOpen && (
         <Modal
           handleBurgerMenu={handleBurgerMenu}
