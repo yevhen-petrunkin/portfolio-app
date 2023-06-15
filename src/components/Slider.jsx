@@ -70,10 +70,8 @@ function Slider({ collection, handleSlideCounter }) {
       <Swiper
         ref={swiper1}
         className="swiper-img"
-        // modules={[Navigation]}
         parallax={true}
         speed={1200}
-        // navigation={true}
         keyboard={{ enabled: true }}
         mousewheel={{
           sensitivity: 20,

@@ -14,7 +14,7 @@ function SliderMenu({ index }) {
           className="slider__link"
           target="_blank"
           rel="noopener"
-          title="See the project"
+          title="See project"
         >
           <RiComputerLine className="slider__icon" />
         </a>
